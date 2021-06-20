@@ -24,6 +24,7 @@ function App() {
   console.log(newsArray);
   useEffect(() => {
     newsApi();
+    // eslint-disable-next-line
   }, [newsResults, category, loadmore]);
 
   return (

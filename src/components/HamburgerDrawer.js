@@ -86,22 +86,19 @@ export default function SwipeableTemporaryDrawer({ setCategory }) {
 
   return (
     <div>
-      {["left"].map((anchor) => (
-        <React.Fragment key={"left"}>
-          <Button onClick={toggleDrawer("left", true)}>
-            <MenuIcon style={{ color: "white" }} />
-          </Button>
-          <ThemeProvider theme={theme} />
-          <SwipeableDrawer
-            anchor={"left"}
-            open={state["left"]}
-            onClose={toggleDrawer("left", false)}
-            onOpen={toggleDrawer("left", true)}
-          >
-            {list("left")}
-          </SwipeableDrawer>
-        </React.Fragment>
-      ))}
+      <Button onClick={toggleDrawer("left", true)}>
+        <MenuIcon style={{ color: "white" }} />
+      </Button>
+      <ThemeProvider theme={theme} />
+      <SwipeableDrawer
+        anchor={"left"}
+        open={state["left"]}
+        onClose={toggleDrawer("left", false)}
+        onOpen={toggleDrawer("left", true)}
+      >
+        {list("left")}
+      </SwipeableDrawer>
+      ))
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Footer = () => {
       <span className="name">Submission for IDKWhatIDid</span>
       <hr style={{ width: "90%" }} />
       <div className="icon-container">
-        <a href="#" target="__blank">
+        <a href="https://github.com/rishitbhojak/the-briefing" target="__blank">
           <i class="git-icon fab fa-github fa-3x"></i>
         </a>
       </div>
