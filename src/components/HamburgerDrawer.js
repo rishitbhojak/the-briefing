@@ -98,7 +98,6 @@ export default function SwipeableTemporaryDrawer({ setCategory }) {
       >
         {list("left")}
       </SwipeableDrawer>
-      ))
     </div>
   );
 }
